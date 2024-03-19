@@ -1,0 +1,140 @@
+
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #ffffff;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0;
+}
+                          
+img {
+    display: block;                                                                                                           
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1)
+}
+
+#photography {
+    background: #e9c3c3;
+}
+
+#photography-text {
+    display: flex;
+    flex: 0 1 480px;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+
+
+#photography-image {
+    background: url(https://source.unsplash.com/De8wMYoSSBc);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 720px;
+    margin: 0;
+}
+
+.btn {
+    padding: 16px 24px;
+    border: 1px solid #b80606;
+    display: inline-block;
+    margin: 32px 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+}
+
+#header {
+    padding: 24px;
+    text-align: center;
+    background: #eeb0b0;
+    color: #e50909;
+}
+
+#header h2 {
+    border-left: 1px dotted #fff;
+    border-right: 1px dotted #522b2b;
+    display: inline-block;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.caption {
+    padding: 13px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 32px 16px;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: red;
+}
+
+
+
+@media(min-width: 500px) {
+    #photography {
+        display: flex;
+        height: 100%;
+    }
+
+    #photography-text {
+        height: 100vh;
+    }
+
+    #photography-image {
+        height: 100vh;
+    }
+}
+
+
+
+@media(min-width: 700px) {
+    .btn {
+        padding: 16px 48px;
+    }
+}
+
